@@ -13,7 +13,6 @@ $ldapc = new ldapClass();
 $ldapc->connectLDAP($host,$username, $password, $domain) // note the variable domain must be like "domain\\"
 
 4 - get result
-example $dn = 'DC=domain,DC=com';
-example $filter = (&(sn=*)) //first name *(all)
-example $array('mail','sn', 'samaccountname', 'givenname', 'cn', 'telephonenumber', 'description', 'physicaldeliveryofficename') // list of attributes to retrieve
+example $dn = 'DC=domain,DC=com'; $filter = (&(sn=*)) //first name *(all)
+$array('mail','sn', 'samaccountname', 'givenname', 'cn', 'telephonenumber', 'description', 'physicaldeliveryofficename') // list of attributes to retrieve
 $result = $ldapc->getLDAPData($dn, $filter,$attribute);
