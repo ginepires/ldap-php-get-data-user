@@ -1,7 +1,6 @@
 # ldap-php-get-data-user
-this class will get data in active directory
+this class will get data (json) in active directory [php]
 
-get object with data of user in active directory
 HOW TO INCLUDE IT?
 
 1 - include the class 
